@@ -69,6 +69,7 @@ window.loadBuilds = jsonString => {
       });
 
       await IDBExportImport.importFromObject(idb_db, jsonObject);
+      location.reload();
     } catch (err) {
       console.error(err);
     }
